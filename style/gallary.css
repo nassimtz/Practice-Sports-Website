@@ -1,0 +1,21 @@
+/*Gallary*/
+
+.container-Gallery{
+    display: flex;
+    flex-wrap: wrap ;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.Gallery {
+    width: 45% ;
+    background: #e7e7e7;
+    margin: 20px;
+}
+
+.Gallery img{
+    width: 100% ;
+    justify-content: center;
+    
+}

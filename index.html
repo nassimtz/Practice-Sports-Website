@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='./style/main.css'>
+    <link rel="stylesheet" href="./style/home.css">
+    <title>SportNews</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="logo">
+                    <h3>Sport News</h3>
+                </div>
+                <div class="login-btn">
+                    <i class="fas fa-user"></i>
+                    <a href="./login.html"> Log In </a>
+                </div>
+                <div class="search"> 
+                    <input type="text" placeholder="Search...">
+                    <div class="result-box">
+
+                    </div>
+                     <div class="icon">
+                         <i class="fas fa-search"></i>
+                     </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="./about.html" > About </a>
+                <a href="./gallary.html" > Gallary </a>
+                <a href="./index.html" class="home"> Home </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class='Carousel'>
+            <div class="slides">
+                <div class="item active" id="slide1">
+                    <img src="/imgs/1.jpg" alt="slide">
+                </div>
+                <div class="item" id="slide2">
+                    <img src="/imgs/2.jpg" alt="slide">
+                </div>
+                <div class="item" id="slide3">
+                    <img src="/imgs/3.jpg" alt="slide">
+                </div>
+                <div class="item" id="slide4">
+                    <img src="/imgs/4.jpg" alt="slide">
+                </div>
+                <div class="item" id="slide5">
+                    <img src="/imgs/5.jpg" alt="slide">
+                </div>
+            </div>
+        </section>
+        <span class="container-player">
+            <div class="myplayer">
+                <video src="./video/video1.mp4"></video>
+                <div class="myplayer__controls">
+                    <div class="controls__progressbar">
+                        <input class="controls__progressbar-current" type="range" min="1" max="100" step="1" value="0" >
+                    </div>
+                
+                    <div class="controls__btns">
+                        <div class="left">
+                            <div class="btns play">
+                                <i class="icon ion-md-play"></i>
+                            </div>
+                            <div class="btns rewind">
+                                <i class="icon ion-md-rewind"></i>
+                            </div>
+                            <div class="btns forward">
+                                <i class="icon ion-md-fastforward"></i>
+                            </div>
+                            <div class="timer">
+                                <span class="currentTime">00:00</span>
+                                <span>/</span>
+                                <span class="videoTime" >00:00</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="btns volume">
+                                <i class="icon ion-md-volume-high"></i>
+                                <div class="volume__progress">
+                                    <input id="volume_bar" type="range" min="1" max="100" step="1" value="50" >
+                                </div>
+                            </div>
+                            <div class="btns fullscreen">
+                                <i class="icon ion-md-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-video">
+                <h1>Jamie Carragher blasts 'disgraceful' Tottenham after first-half Newcastle mauling as Kieron Dyer claims Antonio Conte was right about players</h1>
+                <p>Newcastle raced into 5-0 lead over Tottenham inside 21 minutes at St James' Park; Doubles from Alexander Isak and Jacob Murphy along with a Joelinton strike gave Magpies staggering start before Harry Kane and Callum Wilson traded second-half goals as hosts claimed crushing 6-1 win</p>
+            </div>
+        </span>
+        <span class="container-table">
+            <table class="table" >
+                <th class="header" colspan="5"><h1>LaLiga standings</h1>season 2022-23</th>
+                <tbody>
+                    <tr>
+                        <td class="clubs">Club</td>
+                        <td>MP</td>
+                        <td>W</td>
+                        <td>D</td>
+                        <td>L</td>
+                    </tr>
+                    <tr>
+                        <td class="clubs">1 Barcelona</td>
+                        <td>30</td>
+                        <td>24</td>
+                        <td>4</td>
+                        <td>2</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">2 Real Madrid</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>5</td>
+                        <td>5</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">3 Atletico Madrid</td>
+                        <td>30</td>
+                        <td>18</td>
+                        <td>6</td>
+                        <td>6</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">4 Real Sociedad</td>
+                        <td>30</td>
+                        <td>16</td>
+                        <td>6</td>
+                        <td>8</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">5 Real Betis</td>
+                        <td>30</td>
+                        <td>14</td>
+                        <td>6</td>
+                        <td>10</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">6 Villarreal</td>
+                        <td>29</td>
+                        <td>14</td>
+                        <td>5</td>
+                        <td>10</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">7 Athletic Club</td>
+                        <td>30</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>10</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">8 Osasuna</td>
+                        <td>30</td>
+                        <td>11</td>
+                        <td>8</td>
+                        <td>11</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">9 RAyo Vallecano</td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+
+                    </tr>
+                    <tr>
+                        <td class="clubs">10 Girona</td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </span>
+        <span class="container-article">
+            <div class="article">
+                <article>
+                    <header>
+                        <h1>Hot news </h1>
+                        <h2>
+                            <a href="#">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. 
+                            </a>
+                        </h2>
+                    </header>
+                    <div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                        necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                        sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                        necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                        sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                        necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                        sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                        necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                        sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                        necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                        sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                        </p>
+                        <details>
+                            <summary>click here to see more </summary>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, 
+                                ut rerum! Illum eius porro totam incidunt blanditiis facere explicabo commodi provident 
+                                obcaecati laudantium sit dolores, quo temporibus reiciendis. Quoslor Lorem ipsum dolor sit 
+                                amet consectetur adipisicing elit. Aperiam suscipit, ab iusto ipsa soluta ut omnis dolores accusamus et 
+                                sed excepturi nemo quod saepe modi repellendus obcaecati quos porro? Eum. Lorem ipsum dolor, sit amet 
+                                consectetur adipisicing elit. Minus, autem veniam? Dolores, exercitationem omnis, deserunt corporis id 
+                                natus qui 
+                                facere doloremque harum minus nobis maxime quos vel ea totam numquam?
+                                odio modi, iusto officiis quod, eveniet consequuntur 
+                                nostrum voluptatum magnam?Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Accusamus excepturi vitae 
+                                eos nam modi repellat debitis laudantium suscipit dolor, 
+                                eius reprehenderit aspernatur qui quae culpa soluta 
+                                praesentium quis earum voluptates!Loremlo
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Tempora natus odio, atque nesciunt in molestias similique 
+                                possimus porro voluptatum, 
+                                vero consectetur reiciendis. Ea dolorum explicabo sapiente soluta, 
+                                aspernatur eligendi blanditiis!Loremlo necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                                sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                                sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                                sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                                sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+                                necessitatibus voluptatum possimus eaque repellendus labore quia atque tempore modi
+                                sapiente culpa, officia at quam nulla maxime ab perspiciatis rem. Maiores.
+                            </p>
+                        </details>
+                        <footer class="footer-article">
+                            <time datetime="2023-6-12T23:00+3:30">june 12, 2023 - 11:00pm</time>
+                            <address>
+                                by <a href="#"> sport news </a>
+                            </address>
+                        </footer>
+                </article>
+                <img src="./imgs/gallary/4.jpg" alt="">
+            </div>
+        </span>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        Copyright © 2023
+        </div>
+        </div>
+        </footer>
+    <script src="./script.js" ></script>
+</body>
+</html>
